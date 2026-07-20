@@ -1,0 +1,10 @@
+@import "tailwindcss";
+body {
+  font-family: var(--font-manrope), sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #fafafa;
+  font-size: 20px;
+  color: #626262;
+}
