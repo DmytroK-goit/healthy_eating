@@ -2,6 +2,9 @@ import Image from "next/image";
 import flag from "../img/about/flag.png";
 import manager from "../img/about/manager.png";
 import health from "../img/about/health.png";
+import Link from "next/link";
+import green from "../img/about/green.png";
+import dish from "../img/about/dish.png";
 
 export default function About() {
   const cards = [
@@ -52,7 +55,53 @@ export default function About() {
         ))}
       </ul>
 
-      <p>About</p>
+      <div className="container mx-auto px-4 pt-28">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="relative max-w-xl">
+            <Image
+              src={green}
+              alt="Green leaves"
+              className="absolute -top-6 -left-6 w-20 lg:w-auto"
+            />
+
+            <h2 className="mb-6 text-4xl font-bold text-[#333] lg:text-6xl">
+              About Us
+            </h2>
+
+            <div className="space-y-6 text-lg leading-8 text-[#6C6C6C]">
+              <p>
+                Meals America provides home-delivered meals to consumers across
+                all 67 counties in Florida. We offer a wide variety of frozen,
+                refrigerated, and shelf-stable meals including dinners, deli
+                café, breakfasts, soups, and specialty weeks.
+              </p>
+
+              <p>
+                We also provide options for customers with dietary restrictions
+                and have vegetarian, sodium-controlled, and gluten-free menus.
+                We also provide emergency packs for emergency situations that
+                contain shelf stable items only and do not require refrigeration
+                or heating.
+              </p>
+            </div>
+
+            <Link
+              href="/"
+              className="mt-10 inline-flex h-14 items-center justify-center rounded-full border border-[#0F7A41] px-10 font-semibold text-[#0F7A41] transition hover:bg-[#0F7A41] hover:text-white"
+            >
+              Read More
+            </Link>
+          </div>
+          <div className="relative flex justify-center lg:justify-end">
+            <Image
+              src={dish}
+              alt="Healthy meal"
+              className="h-auto w-full max-w-[820px]"
+              priority
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
