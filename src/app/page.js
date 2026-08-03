@@ -3,6 +3,7 @@ import Contact from "@/component/contact";
 import Hero from "@/component/hero";
 import HowItWorks from "@/component/howItWorks";
 import Menu from "@/component/menu";
+import WhyUs from "@/component/whyUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <WhyUs />
       <HowItWorks />
       <Menu />
       <Contact />
