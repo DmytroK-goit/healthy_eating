@@ -9,6 +9,7 @@ import international from "../img/choose/international.png";
 import family from "../img/choose/family.png";
 import homestyle from "../img/choose/homestyle.png";
 import { yellowtail } from "./whyUs";
+import Link from "next/link";
 
 const plans = [
   { icon: gourmet, title: "Gourmet" },
@@ -76,9 +77,13 @@ export default function ChooseYourNutr() {
               </ul>
 
               <div className="mt-10 flex gap-5">
-                <button className="rounded-full border border-green-700 px-8 py-4 font-semibold text-green-700 transition hover:bg-green-700 hover:text-white">
+                <Link
+                  href="/menu.xlsx"
+                  download
+                  className="inline-flex rounded-full border border-green-700 px-8 py-4 font-semibold text-green-700 transition hover:bg-green-700 hover:text-white"
+                >
                   DOWNLOAD MENU
-                </button>
+                </Link>
 
                 <button className="rounded-full bg-green-700 px-8 py-4 font-semibold text-white transition hover:bg-green-800">
                   GET STARTED
