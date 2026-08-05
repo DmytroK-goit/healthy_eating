@@ -1,4 +1,5 @@
 import About from "@/component/about";
+import ChooseYourNutr from "@/component/chooseYourNutr";
 import Contact from "@/component/contact";
 import Hero from "@/component/hero";
 import HowItWorks from "@/component/howItWorks";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <WhyUs />
+      <ChooseYourNutr />
       <HowItWorks />
       <Menu />
       <Contact />

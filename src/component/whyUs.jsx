@@ -10,7 +10,7 @@ import truck from "../img/whyUs/Truck.png";
 import cook from "../img/whyUs/cook.png";
 import { Yellowtail } from "next/font/google";
 
-const yellowtail = Yellowtail({
+export const yellowtail = Yellowtail({
   subsets: ["latin"],
   weight: "400",
 });
