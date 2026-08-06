@@ -1,6 +1,7 @@
 import About from "@/component/about";
 import ChooseYourNutr from "@/component/chooseYourNutr";
 import Contact from "@/component/contact";
+import Delivery from "@/component/delivery";
 import Hero from "@/component/hero";
 import HowItWorks from "@/component/howItWorks";
 import Menu from "@/component/menu";
@@ -14,9 +15,8 @@ export default function Home() {
       <About />
       <WhyUs />
       <ChooseYourNutr />
-      <HowItWorks />
-      <Menu />
-      <Contact />
+
+      <Delivery />
     </>
   );
 }
