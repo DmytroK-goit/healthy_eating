@@ -8,6 +8,7 @@ import deli from "../img/choose/deli.png";
 import international from "../img/choose/international.png";
 import family from "../img/choose/family.png";
 import homestyle from "../img/choose/homestyle.png";
+import banner from "../img/choose/banner.png";
 import { yellowtail } from "./whyUs";
 import Link from "next/link";
 
@@ -91,6 +92,29 @@ export default function ChooseYourNutr() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="relative h-[566px] overflow-hidden ">
+        <Image
+          src={banner}
+          alt="Banner"
+          fill
+          priority
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
+          <h2 className="max-w-[600px] text-center text-5xl font-bold text-white">
+            Schedule your first <span className="text-[#39C23F]">weekly</span>{" "}
+            delivery
+          </h2>
+
+          <Link
+            href="/"
+            className="mt-8 rounded-full bg-[#39C23F] px-10 py-4 font-semibold text-white transition hover:bg-[#2faa36]"
+          >
+            GET STARTED
+          </Link>
         </div>
       </div>
     </section>
