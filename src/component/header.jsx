@@ -20,7 +20,7 @@ export default function Header() {
           <ul className="flex items-center gap-12">
             <li>
               <Link
-                href="#about"
+                href="/about"
                 className="text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
               >
                 About Us
@@ -29,7 +29,7 @@ export default function Header() {
 
             <li>
               <Link
-                href="#how"
+                href="/howitworks"
                 className="flex items-center gap-1 text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
               >
                 How It Works
@@ -38,7 +38,7 @@ export default function Header() {
 
             <li>
               <Link
-                href="#menu"
+                href="/menu"
                 className="text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
               >
                 Menu
@@ -47,7 +47,7 @@ export default function Header() {
 
             <li>
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
               >
                 Contact
