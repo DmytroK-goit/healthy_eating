@@ -85,7 +85,7 @@ export default function WhyUs() {
                   key={item.title}
                   className="flex items-center gap-5 rounded-md bg-white p-5 shadow-sm"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center border-l-4 border-green-600 pr-4">
+                  <div className="flex h-12 w-12 items-center justify-center border-l-4 border-green-600  pl-4">
                     <Image
                       src={item.icon}
                       alt={item.title}

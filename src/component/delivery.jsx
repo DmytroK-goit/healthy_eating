@@ -51,7 +51,7 @@ export default function Delivery() {
             </div>
 
             <Link
-              href="/"
+              href="/howitworks"
               className="inline-flex h-14 items-center justify-center rounded-full border border-[#0C6A2B] px-10 font-semibold text-[#0C6A2B] transition hover:bg-[#0C6A2B] hover:text-white"
             >
               Read more
