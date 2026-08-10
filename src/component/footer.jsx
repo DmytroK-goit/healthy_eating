@@ -63,19 +63,19 @@ export default function Footer() {
 
             <ul className="space-y-4">
               <li>
-                <Link href="#about">About Us</Link>
+                <Link href="/about">About Us</Link>
               </li>
 
               <li>
-                <Link href="#works">How it works</Link>
+                <Link href="/howitworks">How it works</Link>
               </li>
 
               <li>
-                <Link href="#menu">Our menu</Link>
+                <Link href="/menu">Our menu</Link>
               </li>
 
               <li>
-                <Link href="#contact">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>

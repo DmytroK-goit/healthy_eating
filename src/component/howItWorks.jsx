@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Check, UserRound, HeartHandshake } from "lucide-react";
 
 import delyveryMan from "../img/deliveryMan.png";
-import delyveryCar from "../img/delivery.png";
+import delivery from "../img/delivery.png";
+import { yellowtail } from "./whyUs";
 
 const questions = [
   "Are you over 65?",
@@ -14,6 +15,41 @@ const questionsSecond = [
   "Are you disabled?",
   "Are you over 65?",
   "Do you have Medicare/Medicaid or ANY other health insurance that offer paid meal option?",
+];
+const eligibilityRequirements = [
+  "Be a resident of Florida",
+  "Be a U.S. citizen or a qualified non-citizen",
+  "Have a Social Security Number",
+  "Be 65 years of age or older",
+  "Meet the level of care needs for a Skilled Nursing Facility",
+  "Meet the financial requirements by the local county assistance office",
+];
+
+const waiverServicesLeft = [
+  "Accessibility Adaptations, Equipment, Technology and Medical Supplies",
+  "Adult Daily Living Services",
+  "Assistive Technology",
+  "Community Transition Services",
+  "Home Adaptations",
+  "Home Delivered Meals",
+  "Home Health Services",
+  "Non-Medical Transportation Services",
+  "Nutritional Consultation Services",
+  "Nursing Services",
+];
+
+const waiverServicesRight = [
+  "Participant-Directed Community Supports",
+  "Participant-Directed Goods and Services",
+  "Personal Assistance Services",
+  "Personal Emergency Response System (PERS)",
+  "Physical Therapy Services",
+  "Respite",
+  "Service Coordination",
+  "Specialized Medical Equipment and Supplies",
+  "Speech and Language Therapy Services",
+  "TeleCare",
+  "Therapeutic and Counseling Services",
 ];
 
 export default function HowItWorks() {
@@ -122,7 +158,6 @@ export default function HowItWorks() {
       </div>
       <div className="bg-[#F4FAF0]">
         <div className="mx-auto grid max-w-[1200px] items-center lg:grid-cols-2">
-          {/* Text */}
           <div className="px-6 py-16 lg:px-10 lg:py-20">
             <h2 className="text-4xl font-extrabold text-[#333] md:text-5xl">
               Who We Serve
@@ -157,50 +192,136 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
-      <div>
-        <h3>Eligibility</h3>
-        <p>
-          Find out if you are eligible to have Meals America deliver meals to
-          you each week at NO COST for you!
-        </p>
-        <div className="mt-10 flex flex-col items-center gap-5">
-          {questionsSecond.map((question) => (
-            <div
-              key={question}
-              className="flex items-center gap-3 text-sm font-semibold text-[#555]"
-            >
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[#08752E]">
-                <Check size={16} strokeWidth={3} className="text-white" />
-              </span>
+      <div className="mx-auto max-w-[1100px] px-5 mt-6">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold text-[#333] md:text-5xl">
+            Aging Waiver
+          </h2>
 
-              <span>{question}</span>
-            </div>
-          ))}
+          <p className="mx-auto mt-6 max-w-[850px] text-sm font-semibold leading-5 text-[#777] md:text-base">
+            We serve those in need for long-term meal assistance or anyone who
+            might be in need of a short-term plan while recovering from an
+            injury or illness, or who would simply enjoy healthy meals that
+            require minimal preparation time.
+          </p>
+
+          <p className="mx-auto mt-6 max-w-[900px] text-sm leading-5 text-[#777] md:text-base">
+            Aging Home and Community-Based Waiver Services may be available to
+            any Florida over 65 to enable them to live in their homes and
+            communities with additional support and services.
+          </p>
+
+          <p className="mx-auto mt-6 max-w-[900px] text-sm leading-5 text-[#777] md:text-base">
+            Meals America is happy to provide extra information about the waiver
+            and who&apos;s eligible. If you have any questions reach our
+            customer care representative at{" "}
+            <a href="tel:+17866005909" className="font-bold text-[#08752E]">
+              (786) 600-59-09
+            </a>
+            , use our LIVE chat box, or fill out the form below and someone will
+            reach back to you over e-mail within 2 business days. We will
+            happily assist you with any questions you have.
+          </p>
         </div>
-        <p>
-          If you answered “Yes” to any of these questions, you may qualify for
-          Meals America weekly meal delivery plan at NO COST for you! If you
-          have any questions call about your eligibility us (786) 600-59-09, use
-          our LIVE chat box, or fill out the form below and someone will reach
-          back to you over e-mail within 2 business days.
+
+        <div className="mx-auto mt-12 max-w-[750px] text-center">
+          <h3 className="text-base font-bold text-[#444] md:text-lg">
+            Aging Waiver eligibility requirements:
+          </h3>
+
+          <ul className="mt-4 space-y-1 text-sm leading-5 text-[#777] md:text-base">
+            {eligibilityRequirements.map((item) => (
+              <li key={item} className="relative">
+                • {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-14">
+          <h3 className="text-center text-base font-bold text-[#444] md:text-lg">
+            Services that Aging Waiver may be available to include:
+          </h3>
+
+          <div className="mt-5 grid gap-x-12 md:grid-cols-2">
+            <ul className="space-y-1 text-sm leading-5 text-[#777] md:text-base">
+              {waiverServicesLeft.map((item) => (
+                <li key={item} className="text-center md:text-right">
+                  • {item}
+                </li>
+              ))}
+            </ul>
+
+            <ul className="space-y-1 text-sm leading-5 text-[#777] md:text-left">
+              {waiverServicesRight.map((item) => (
+                <li key={item} className="text-center md:text-left">
+                  • {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <p className="mx-auto mt-12 max-w-[750px] text-center text-sm font-semibold leading-5 text-[#555] md:text-base">
+          If you have any questions, contact our Professional and qualified team
+          of health care experts at{" "}
+          <a href="tel:+17866005909" className="font-bold text-[#08752E]">
+            (786) 600-59-09
+          </a>{" "}
+          to help you determine if you qualify for the FL Aging Waiver.
         </p>
-        <h3>Aging Waiver</h3>
-        <p>
-          We serve those in need for long-term meal assistance or anyone who
-          might be in need of a short-term plan while recovering from an injury
-          or illness, or who would simply enjoy healthy meals that require
-          minimal preparation time.
-        </p>
-        <p>
-          Aging Home and Community-Based Waiver Services may be available to any
-          Florida over 65 to enable them to live in their homes and communities
-          with additional support and services. Meals America is happy to
-          provide extra information about the waiver and who’s eligible. If you
-          have any questions reach our customer care representative at (786)
-          600-59-09, use our LIVE chat box, or fill out the form below and
-          someone will reach back to you over e-mail within 2 business days. We
-          will happily assist you with any questions you have.
-        </p>
+        {/* Last block */}
+
+        <div className="max-w-[1920px]">
+          <div className="mx-auto grid max-w-[1200px] items-center lg:grid-cols-2">
+            <div className="px-6 py-16 lg:px-10 lg:py-20">
+              <div className="flex items-center gap-3">
+                <span
+                  className={`${yellowtail.className} font-script text-2xl text-[#08752E]`}
+                >
+                  Who We Serve?
+                </span>
+
+                <span className="h-[2px] w-14 bg-[#08752E]" />
+              </div>
+
+              <h2 className="mt-2 text-4xl font-extrabold text-[#333] md:text-5xl">
+                Why us?
+              </h2>
+
+              <p className="mt-6 max-w-[570px] text-sm leading-5 text-[#777] md:text-[15px]">
+                Meals America is determined to provide good meals for those in
+                need and attempt to address the needs of the participants at
+                home on long-term care, post-discharge and those with chronic
+                conditions. We try to help all participants to remain
+                independent and provide the best meal plans and a large menu
+                with many options to choose from to fit any dietary need.
+              </p>
+
+              <p className="mt-4 max-w-[570px] text-sm leading-5 text-[#777] md:text-[15px]">
+                We have a variety of options from vegetarian to kosher,
+                low-sodium, gluten-free, and many more. Our meals help those
+                with health issues or injuries to make proper meals easily and
+                safe. We deliver straight to their doorstep each week.
+              </p>
+
+              <p className="mt-4 max-w-[570px] text-sm leading-5 text-[#777] md:text-[15px]">
+                The meals get warmed up in the microwave and are ready to be
+                served and enjoyed in minutes! Please note that all referrals
+                submitted by case managers and coordinators by 5:00 PM EST by
+                Friday will be delivered the following week.
+              </p>
+            </div>
+
+            <div className="relative flex h-full min-h-[520px] items-center justify-center ">
+              <Image
+                src={delivery}
+                alt="Meals America home delivery"
+                className="w-[600px] max-w-none"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

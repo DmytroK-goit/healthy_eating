@@ -30,7 +30,7 @@ export default function Header() {
             <li>
               <Link
                 href="/howitworks"
-                className="flex items-center gap-1 text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
+                className="text-[15px] font-medium text-[#2B2B2B] transition hover:text-[#2D7D46]"
               >
                 How It Works
               </Link>
