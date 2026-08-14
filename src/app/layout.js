@@ -2,6 +2,7 @@ import Header from "@/component/header";
 import Footer from "@/component/footer";
 import "./globals.css";
 import { Manrope } from "next/font/google";
+import ScrollToTop from "@/component/ScrollToTop";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -85,6 +86,7 @@ export default function RootLayout({ children }) {
         <main className="flex-1">{children}</main>
 
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
