@@ -4,6 +4,7 @@ import { Check, UserRound, HeartHandshake } from "lucide-react";
 import delyveryMan from "../img/deliveryMan.png";
 import delivery from "../img/delivery.png";
 import { yellowtail } from "./whyUs";
+import AnimatedSection from "./AnimatedSection";
 
 const questions = [
   "Are you over 65?",
@@ -54,7 +55,7 @@ const waiverServicesRight = [
 
 export default function HowItWorks() {
   return (
-    <section>
+    <AnimatedSection>
       <div className="bg-white py-20">
         <div className="mx-auto max-w-[900px] px-6 text-center">
           <p className="mx-auto max-w-[760px] text-sm font-semibold leading-5 text-[#666]">
@@ -185,6 +186,7 @@ export default function HowItWorks() {
           <div className="relative flex h-full min-h-[420px] items-end justify-center overflow-hidden">
             <Image
               src={delyveryMan}
+              data-hover-image
               alt="Meals America delivery service"
               className="w-[600px] max-w-none"
               priority
@@ -270,7 +272,6 @@ export default function HowItWorks() {
           </a>{" "}
           to help you determine if you qualify for the FL Aging Waiver.
         </p>
-        {/* Last block */}
 
         <div className="max-w-[1920px]">
           <div className="mx-auto grid max-w-[1200px] items-center lg:grid-cols-2">
@@ -316,6 +317,7 @@ export default function HowItWorks() {
             <div className="relative flex h-full min-h-[520px] items-center justify-center ">
               <Image
                 src={delivery}
+                data-hover-image
                 alt="Meals America home delivery"
                 className="w-[600px] max-w-none"
               />
@@ -323,6 +325,6 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

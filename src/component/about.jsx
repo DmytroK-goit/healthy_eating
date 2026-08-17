@@ -60,6 +60,7 @@ export default function About() {
           <div className="relative max-w-xl">
             <Image
               src={green}
+              data-hover-image
               alt="Green leaves"
               className="absolute -top-6 -left-6 w-20 lg:w-auto"
             />
@@ -87,6 +88,7 @@ export default function About() {
 
             <Link
               href="/"
+              data-hover-button
               className="mt-10 inline-flex h-14 items-center justify-center rounded-full border border-[#0F7A41] px-10 font-semibold text-[#0F7A41] transition hover:bg-[#0F7A41] hover:text-white"
             >
               Read More
@@ -95,6 +97,7 @@ export default function About() {
           <div className="relative flex justify-center lg:justify-end">
             <Image
               src={dish}
+              data-hover-image
               alt="Healthy meal"
               className="h-auto w-full max-w-[820px]"
               priority

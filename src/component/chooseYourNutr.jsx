@@ -27,6 +27,7 @@ export default function ChooseYourNutr() {
       <div className="relative rounded-t-[180px] bg-[#084a1f] px-6 py-20 lg:px-20 max-h-[50%] z-1">
         <Image
           src={vegetable}
+          data-hover-image
           alt=""
           className="absolute right-0 -top-20 w-60"
         />
@@ -50,7 +51,12 @@ export default function ChooseYourNutr() {
                 key={plan.title}
                 className="flex flex-col items-center justify-center gap-3 border-r last:border-r-0"
               >
-                <Image src={plan.icon} alt={plan.title} className="h-10 w-10" />
+                <Image
+                  data-hover-image
+                  src={plan.icon}
+                  alt={plan.title}
+                  className="h-10 w-10"
+                />
 
                 <span className="text-sm font-semibold text-[#1B5E20]">
                   {plan.title}
@@ -59,7 +65,12 @@ export default function ChooseYourNutr() {
             ))}
           </div>
           <div className="mt-8 grid gap-8 lg:grid-cols-2">
-            <Image src={menuImg} alt="Menu" className="w-full rounded-3xl" />
+            <Image
+              src={menuImg}
+              data-hover-image
+              alt="Menu"
+              className="w-full rounded-3xl"
+            />
 
             <div>
               <h3 className="mb-5 text-2xl font-bold text-[#333]">
@@ -80,13 +91,17 @@ export default function ChooseYourNutr() {
               <div className="mt-10 flex gap-5">
                 <Link
                   href="/menu.xlsx"
+                  data-hover-button
                   download
                   className="inline-flex rounded-full border border-green-700 px-8 py-4 font-semibold text-green-700 transition hover:bg-green-700 hover:text-white"
                 >
                   DOWNLOAD MENU
                 </Link>
 
-                <button className="rounded-full bg-green-700 px-8 py-4 font-semibold text-white transition hover:bg-green-800">
+                <button
+                  data-hover-button
+                  className="rounded-full bg-green-700 px-8 py-4 font-semibold text-white transition hover:bg-green-800 cursor-pointer"
+                >
                   GET STARTED
                 </button>
               </div>
@@ -97,6 +112,7 @@ export default function ChooseYourNutr() {
       <div className="relative h-[566px] overflow-hidden ">
         <Image
           src={banner}
+          data-hover-image
           alt="Banner"
           fill
           priority
@@ -111,6 +127,7 @@ export default function ChooseYourNutr() {
 
           <Link
             href="/"
+            data-hover-button
             className="mt-8 rounded-full bg-[#39C23F] px-10 py-4 font-semibold text-white transition hover:bg-[#2faa36]"
           >
             GET STARTED

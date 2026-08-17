@@ -8,6 +8,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 h-full w-[58%]">
         <Image
           src={heroImg}
+          data-hover-image
           alt="Hero"
           fill
           priority
@@ -44,6 +45,7 @@ export default function Hero() {
           <div className="mt-12 flex gap-6">
             <Link
               href="#how"
+              data-hover-button
               className="
                 rounded-full
                 border-2
@@ -62,6 +64,7 @@ export default function Hero() {
 
             <Link
               href="#"
+              data-hover-button
               className="
                 rounded-full
                 bg-[#0F5D2F]

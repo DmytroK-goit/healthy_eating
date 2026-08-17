@@ -42,6 +42,7 @@ export default function WhyUs() {
           <div className="relative flex justify-center">
             <Image
               src={greenLeaves}
+              data-hover-image
               alt=""
               className="absolute -top-22 left-3/4 -translate-x-3/4"
             />
@@ -49,12 +50,14 @@ export default function WhyUs() {
             <div className="relative h-[520px] w-full max-w-[540px]">
               <Image
                 src={dishFirst}
+                data-hover-image
                 alt="Healthy food"
                 className="absolute left-0 top-0 w-[320px] rounded-lg"
               />
 
               <Image
                 src={dishSec}
+                data-hover-image
                 alt="Meal"
                 className="absolute bottom-0 right-0 w-[320px] rounded-lg shadow-xl"
               />
@@ -88,6 +91,7 @@ export default function WhyUs() {
                   <div className="flex h-12 w-12 items-center justify-center border-l-4 border-green-600  pl-4">
                     <Image
                       src={item.icon}
+                      data-hover-image
                       alt={item.title}
                       className="h-7 w-7 object-contain"
                     />

@@ -1,4 +1,5 @@
 import About from "@/component/about";
+import AnimatedSection from "@/component/AnimatedSection";
 import ChooseYourNutr from "@/component/chooseYourNutr";
 import Contact from "@/component/contact";
 import Delivery from "@/component/delivery";
@@ -10,13 +11,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <AnimatedSection>
       <Hero />
       <About />
       <WhyUs />
       <ChooseYourNutr />
 
       <Delivery />
-    </>
+    </AnimatedSection>
   );
 }

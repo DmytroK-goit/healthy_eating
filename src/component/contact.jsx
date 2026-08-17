@@ -4,6 +4,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
+import AnimatedSection from "./AnimatedSection";
 
 const initialValues = {
   name: "",
@@ -74,7 +75,7 @@ export default function Contact() {
         }}
       />
 
-      <section className="bg-white px-4 py-16 md:py-20 lg:py-24">
+      <AnimatedSection className="bg-white px-4 py-16 md:py-20 lg:py-24">
         <div className="mx-auto max-w-[1100px]">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-[#333] md:text-5xl">
@@ -237,7 +238,7 @@ export default function Contact() {
             </Formik>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

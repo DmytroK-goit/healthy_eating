@@ -61,6 +61,7 @@ export default function Delivery() {
           <div className="flex justify-center lg:justify-end">
             <Image
               src={delivery}
+              data-hover-image
               alt="Meals America Delivery"
               className="h-auto w-full max-w-[700px]"
               priority

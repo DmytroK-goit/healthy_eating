@@ -3,24 +3,28 @@ import Image from "next/image";
 import dish from "../img/aboutPage/dish.png";
 import brocoly from "../img/aboutPage/brocoly.png";
 import leavs from "../img/aboutPage/leavs.png";
+import AnimatedSection from "./AnimatedSection";
 
 export default function AboutUsPage() {
   return (
-    <section className="relative overflow-hidden bg-white py-20 lg:min-h-[620px]">
+    <AnimatedSection className="relative overflow-hidden bg-white py-20 lg:min-h-[620px]">
       <Image
         src={leavs}
+        data-hover-image
         alt=""
         className="absolute left-[27%] top-10 z-0 w-[90px] lg:left-[28%] lg:w-[110px]"
       />
 
       <Image
         src={dish}
+        data-hover-image
         alt="Healthy meal from Meals America"
         className="absolute -right-20 top-14 z-0 w-[280px] md:w-[350px] lg:-right-24 lg:top-24 "
       />
 
       <Image
         src={brocoly}
+        data-hover-image
         alt=""
         className="absolute -bottom-10 -left-10 z-0 w-[140px] md:w-[180px] lg:-bottom-16 lg:-left-5 lg:w-[220px]"
       />
@@ -59,6 +63,6 @@ export default function AboutUsPage() {
           </p>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
