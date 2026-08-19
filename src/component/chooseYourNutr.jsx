@@ -28,7 +28,7 @@ export default function ChooseYourNutr() {
         <Image
           src={vegetable}
           data-hover-image
-          alt=""
+          alt="Vegetables"
           className="absolute right-0 -top-20 w-60"
         />
 

@@ -43,7 +43,7 @@ export default function WhyUs() {
             <Image
               src={greenLeaves}
               data-hover-image
-              alt=""
+              alt="Green leavs"
               className="absolute -top-22 left-3/4 -translate-x-3/4"
             />
 

@@ -11,7 +11,7 @@ export default function AboutUsPage() {
       <Image
         src={leavs}
         data-hover-image
-        alt=""
+        alt="leavs"
         className="absolute left-[27%] top-10 z-0 w-[90px] lg:left-[28%] lg:w-[110px]"
       />
 
@@ -25,7 +25,7 @@ export default function AboutUsPage() {
       <Image
         src={brocoly}
         data-hover-image
-        alt=""
+        alt="brocoly"
         className="absolute -bottom-10 -left-10 z-0 w-[140px] md:w-[180px] lg:-bottom-16 lg:-left-5 lg:w-[220px]"
       />
 

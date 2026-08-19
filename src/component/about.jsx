@@ -12,16 +12,19 @@ export default function About() {
       title: "AAA & State Governments",
       text: "Information for leaders in government or at Area Agencies on Aging.",
       icon: flag,
+      alt: "flag",
     },
     {
       title: "Case Managers",
       text: "Information for case managers who are looking for solutions for their clients or members.",
       icon: manager,
+      alt: "manager",
     },
     {
       title: "Individuals & Caregivers",
       text: "For self-pay customers managing a chronic disease, living independently, or caring.",
       icon: health,
+      alt: "health",
     },
   ];
   return (
